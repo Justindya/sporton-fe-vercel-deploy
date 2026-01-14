@@ -5,7 +5,11 @@ type TCardWithHeaderProps = {
 
 const CardWithHeader = ({ title, children }: TCardWithHeaderProps) => {
   return (
+<<<<<<< HEAD
     <div className="bg-white">
+=======
+    <div className="bg-white ">
+>>>>>>> upstream/session-3
       <div className="px-5 py-4 border-b border-gray-200">
         <h2 className="font-bold text-lg">{title}</h2>
       </div>
