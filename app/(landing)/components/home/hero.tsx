@@ -4,11 +4,7 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-<<<<<<< HEAD
-    <section id="hero-section" className="container mx-auto h-screen flex">
-=======
     <section id="hero-section" className="container mx-auto h-screen flex ">
->>>>>>> upstream/session-3
       <div className="relative self-center">
         <Image
           src="/images/img-basketball.png"

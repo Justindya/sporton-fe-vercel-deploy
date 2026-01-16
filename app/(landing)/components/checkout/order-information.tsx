@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-import CardWithHeader from "../ui/card-with-header";
-
-const OrderInformation = () => {
-=======
 "use client";
 
 import { useState } from "react";
@@ -21,30 +16,10 @@ const OrderInformation = ({ formData, setFormData }: TOrderInformation) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
->>>>>>> upstream/session-3
   return (
     <CardWithHeader title="Order Information">
       <div className="p-5">
         <div className="input-group">
-<<<<<<< HEAD
-          <label htmlFor="full_name">Full Name</label>
-          <input type="text" placeholder="Type your full name" id="full_name" />
-        </div>
-        <div className="input-group">
-          <label htmlFor="wa_number">Whatsapp Number</label>
-          <input
-            type="text"
-            placeholder="Type your whatsapp number"
-            id="wa_number"
-          />
-        </div>
-        <div className="input-group">
-          <label htmlFor="shipping_address">Shipping Address</label>
-          <textarea
-            placeholder="Type your shipping address"
-            id="shipping_address"
-            rows={7}
-=======
           <label htmlFor="customerName">Full Name</label>
           <input
             type="text"
@@ -75,7 +50,6 @@ const OrderInformation = ({ formData, setFormData }: TOrderInformation) => {
             rows={7}
             value={formData.customerAddress}
             onChange={handleInputChange}
->>>>>>> upstream/session-3
           />
         </div>
       </div>

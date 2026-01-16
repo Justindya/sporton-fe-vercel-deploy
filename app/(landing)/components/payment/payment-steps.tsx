@@ -6,14 +6,6 @@ import FileUpload from "../ui/file-upload";
 import priceFormatter from "@/app/utils/price-formatter";
 import Button from "../ui/button";
 import { useRouter } from "next/navigation";
-<<<<<<< HEAD
-
-const PaymentSteps = () => {
-  const { push } = useRouter();
-
-  const uploadAndConfirm = () => {
-    push("/order-status/123123123");
-=======
 import { useState } from "react";
 import { useCartStore } from "@/app/hooks/use-cart-store";
 import { transactionCheckout } from "@/app/services/transaction.service";
@@ -65,7 +57,6 @@ const PaymentSteps = () => {
     } catch (error) {
       console.log(error);
     }
->>>>>>> upstream/session-3
   };
 
   return (
@@ -87,32 +78,20 @@ const PaymentSteps = () => {
             transaction.
           </li>
         </ol>
-<<<<<<< HEAD
-        <FileUpload />
-=======
         <FileUpload onFileSelect={setFile} />
->>>>>>> upstream/session-3
       </div>
 
       <div className="border-t border-gray-200 p-4">
         <div className="flex justify-between font-semibold">
           <div className="text-sm">Total</div>
-<<<<<<< HEAD
-          <div className="text-primary text-xs">{priceFormatter(45000)}</div>
-=======
           <div className="text-primary text-xs">
             {priceFormatter(totalPrice)}
           </div>
->>>>>>> upstream/session-3
         </div>
         <Button
           variant="dark"
           className="w-full mt-4"
-<<<<<<< HEAD
-          onClick={uploadAndConfirm}
-=======
           onClick={handleConfirmPayment}
->>>>>>> upstream/session-3
         >
           <FiCheckCircle />
           Upload Receipt & Confirm
