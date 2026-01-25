@@ -52,3 +52,4 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
+// Slicing Admin Login - Cindy Ninda
